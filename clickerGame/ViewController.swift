@@ -11,6 +11,7 @@ var balance : Double = 0;
 var calPerSecond : Int = 0;
 class ViewController: UIViewController {
 
+    @IBOutlet weak var calPerSecondLabel: UILabel!
     @IBOutlet weak var balanceLabel: UILabel!
     @IBOutlet weak var clickerButton: UIButton!
     override func viewDidLoad() {
@@ -30,6 +31,7 @@ class ViewController: UIViewController {
         balance += 1;
     }
     func updateBalanceLabel(){
+        calPerSecondLabel.text = String(calPerSecond);
         balance += (Double(calPerSecond)/10)
         balanceLabel.text = String(round(balance));
     }

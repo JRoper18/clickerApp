@@ -15,7 +15,11 @@ class UpgradeTableMenu: UITableViewController {
         return upgrades.count
     }
     func upgradeCPS(sender: UIButton){
-        calPerSecond += upgrades[sender.tag].upgrade
+        let possibleUpgrade = upgrades[sender.tag]
+        if(balance >= Double(possibleUpgrade.cost)){
+            calPerSecond += possibleUpgrade.upgrade;
+            balance -= Double(possibleUpgrade.cost);
+        }
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         tableView.allowsSelection = false;
