@@ -7,7 +7,7 @@
 //
 
 import UIKit
-var balance : Int = 0;
+var balance : Double = 0;
 var calPerSecond : Int = 0;
 class ViewController: UIViewController {
 
@@ -30,7 +30,8 @@ class ViewController: UIViewController {
         balance += 1;
     }
     func updateBalanceLabel(){
-        balanceLabel.text = String(balance);
+        balance += (Double(calPerSecond)/10)
+        balanceLabel.text = String(round(balance));
     }
 }
 
