@@ -7,11 +7,11 @@
 //
 
 import UIKit
-
+var balance : Int = 0;
+var calPerSecond : Int = 0;
 class ViewController: UIViewController {
 
     @IBOutlet weak var balanceLabel: UILabel!
-    var balance : Int = 0;
     @IBOutlet weak var clickerButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()

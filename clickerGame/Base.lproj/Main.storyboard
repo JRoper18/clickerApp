@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Upgrade Table Menu-->
@@ -17,35 +19,59 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UpgradeTableCell" rowHeight="75" id="p2m-aj-nU5" customClass="UpgradeTableCell" customModule="clickerGame" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="600" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="p2m-aj-nU5" id="8vU-PY-hTD">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="p2m-aj-nU5" id="8vU-PY-hTD">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qdO-0G-Beh">
+                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qdO-0G-Beh">
                                             <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ucG-Vt-dwT">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ucG-Vt-dwT">
                                                     <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="ucG-Vt-dwT" secondAttribute="height" multiplier="1:1" id="IRm-OU-bOe"/>
+                                                        <constraint firstAttribute="width" constant="75" id="JMW-60-K3l"/>
+                                                        <constraint firstAttribute="height" constant="75" id="swh-ME-wTV"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                         </stackView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+ 1 CPS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fb-Td-vGt">
-                                            <rect key="frame" x="83" y="0.0" width="75" height="37"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="+ 1 CPS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fb-Td-vGt">
+                                            <rect key="frame" x="83" y="0.0" width="426" height="37"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20 C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcK-71-qgd">
-                                            <rect key="frame" x="83" y="37" width="75" height="37"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="20 C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcK-71-qgd">
+                                            <rect key="frame" x="83" y="37" width="426" height="37"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xS4-2V-Fee">
-                                            <rect key="frame" x="417" y="0.0" width="74" height="74"/>
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xS4-2V-Fee">
+                                            <rect key="frame" x="517" y="0.0" width="75" height="75"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="75" id="qLD-Cw-GVN"/>
+                                                <constraint firstAttribute="width" constant="75" id="wTV-If-plE"/>
+                                            </constraints>
                                             <state key="normal" title="Upgrade!"/>
                                         </button>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="3fb-Td-vGt" firstAttribute="leading" secondItem="qdO-0G-Beh" secondAttribute="trailing" id="EFw-86-hF1"/>
+                                        <constraint firstItem="YcK-71-qgd" firstAttribute="leading" secondItem="qdO-0G-Beh" secondAttribute="trailing" id="EII-p9-ew5"/>
+                                        <constraint firstItem="xS4-2V-Fee" firstAttribute="leading" secondItem="3fb-Td-vGt" secondAttribute="trailing" id="EOF-rE-dhr"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="YcK-71-qgd" secondAttribute="bottom" id="Eur-09-7mI"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="xS4-2V-Fee" secondAttribute="trailing" id="GlL-NS-zfz"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="xS4-2V-Fee" secondAttribute="bottom" id="Hny-86-zde"/>
+                                        <constraint firstItem="xS4-2V-Fee" firstAttribute="leading" secondItem="YcK-71-qgd" secondAttribute="trailing" id="M8O-ia-Lbo"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="xS4-2V-Fee" secondAttribute="trailing" id="RTs-HA-i8E"/>
+                                        <constraint firstItem="xS4-2V-Fee" firstAttribute="leading" secondItem="3fb-Td-vGt" secondAttribute="trailing" id="RcN-Qu-68p"/>
+                                        <constraint firstItem="3fb-Td-vGt" firstAttribute="leading" secondItem="qdO-0G-Beh" secondAttribute="trailing" id="Rgd-vw-OgL"/>
+                                        <constraint firstItem="xS4-2V-Fee" firstAttribute="top" secondItem="8vU-PY-hTD" secondAttribute="topMargin" id="gHm-5z-gqJ"/>
+                                        <constraint firstItem="xS4-2V-Fee" firstAttribute="leading" secondItem="YcK-71-qgd" secondAttribute="trailing" id="rzc-hv-ctz"/>
+                                        <constraint firstItem="xS4-2V-Fee" firstAttribute="top" secondItem="8vU-PY-hTD" secondAttribute="topMargin" id="udX-EC-Ddn"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="costUpgradeLabel" destination="YcK-71-qgd" id="ZBh-EF-U3N"/>
@@ -59,6 +85,9 @@
                             <outlet property="delegate" destination="EbH-I2-TjU" id="h3h-ps-gMk"/>
                         </connections>
                     </tableView>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4cn-PN-cfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

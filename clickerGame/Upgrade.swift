@@ -12,9 +12,11 @@ class Upgrade{
     var cost: Int;
     var upgrade: Int;
     var image : String;
-    init(cost: Int, upgrade: Int, image: String){
+    var name: String;
+    init(cost: Int, upgrade: Int, image: String, name: String){
         self.cost = cost;
         self.upgrade = upgrade;
         self.image = image;
+        self.name = name;
     }
 }
