@@ -8,5 +8,9 @@
 import UIKit
 
 class UpgradeTableCell: UITableViewCell {
+    @IBOutlet weak var upgradeLabel: UILabel!
+    
+    @IBOutlet weak var costUpgradeLabel: UILabel!
+    @IBOutlet weak var upgradeImageView: UIImageView!
     
 }

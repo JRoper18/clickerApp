@@ -10,6 +10,8 @@
 		DBCBFF001D43A0710011B59F /* upgradeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCBFEFF1D43A0710011B59F /* upgradeTableCell.swift */; };
 		DBCBFF021D43A3520011B59F /* UpgradeChangeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCBFF011D43A3520011B59F /* UpgradeChangeLabel.swift */; };
 		DBCBFF041D43A3720011B59F /* UpgradeCostLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCBFF031D43A3720011B59F /* UpgradeCostLabel.swift */; };
+		DBCBFF061D43AD650011B59F /* UpgradeTableMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCBFF051D43AD650011B59F /* UpgradeTableMenu.swift */; };
+		DBCBFF081D43AE830011B59F /* Upgrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCBFF071D43AE830011B59F /* Upgrade.swift */; };
 		DBE826A81D428EAF005DE335 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE826A71D428EAF005DE335 /* AppDelegate.swift */; };
 		DBE826AA1D428EAF005DE335 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE826A91D428EAF005DE335 /* ViewController.swift */; };
 		DBE826AD1D428EAF005DE335 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE826AB1D428EAF005DE335 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 		DBCBFEFF1D43A0710011B59F /* upgradeTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = upgradeTableCell.swift; sourceTree = "<group>"; };
 		DBCBFF011D43A3520011B59F /* UpgradeChangeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpgradeChangeLabel.swift; sourceTree = "<group>"; };
 		DBCBFF031D43A3720011B59F /* UpgradeCostLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpgradeCostLabel.swift; sourceTree = "<group>"; };
+		DBCBFF051D43AD650011B59F /* UpgradeTableMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpgradeTableMenu.swift; sourceTree = "<group>"; };
+		DBCBFF071D43AE830011B59F /* Upgrade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Upgrade.swift; sourceTree = "<group>"; };
 		DBE826A41D428EAE005DE335 /* clickerGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clickerGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE826A71D428EAF005DE335 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBE826A91D428EAF005DE335 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				DBE826A71D428EAF005DE335 /* AppDelegate.swift */,
 				DBE826A91D428EAF005DE335 /* ViewController.swift */,
 				DBE826AB1D428EAF005DE335 /* Main.storyboard */,
+				DBCBFF051D43AD650011B59F /* UpgradeTableMenu.swift */,
+				DBCBFF071D43AE830011B59F /* Upgrade.swift */,
 				DBE826AE1D428EAF005DE335 /* Assets.xcassets */,
 				DBE826B01D428EAF005DE335 /* LaunchScreen.storyboard */,
 				DBE826B31D428EAF005DE335 /* Info.plist */,
@@ -147,7 +153,9 @@
 			files = (
 				DBCBFF001D43A0710011B59F /* upgradeTableCell.swift in Sources */,
 				DBCBFF021D43A3520011B59F /* UpgradeChangeLabel.swift in Sources */,
+				DBCBFF061D43AD650011B59F /* UpgradeTableMenu.swift in Sources */,
 				DBE826AA1D428EAF005DE335 /* ViewController.swift in Sources */,
+				DBCBFF081D43AE830011B59F /* Upgrade.swift in Sources */,
 				DBE826A81D428EAF005DE335 /* AppDelegate.swift in Sources */,
 				DBCBFF041D43A3720011B59F /* UpgradeCostLabel.swift in Sources */,
 			);
