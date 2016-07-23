@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DBCBFF001D43A0710011B59F /* upgradeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCBFEFF1D43A0710011B59F /* upgradeTableCell.swift */; };
+		DBCBFF021D43A3520011B59F /* UpgradeChangeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCBFF011D43A3520011B59F /* UpgradeChangeLabel.swift */; };
+		DBCBFF041D43A3720011B59F /* UpgradeCostLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCBFF031D43A3720011B59F /* UpgradeCostLabel.swift */; };
 		DBE826A81D428EAF005DE335 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE826A71D428EAF005DE335 /* AppDelegate.swift */; };
 		DBE826AA1D428EAF005DE335 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE826A91D428EAF005DE335 /* ViewController.swift */; };
 		DBE826AD1D428EAF005DE335 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE826AB1D428EAF005DE335 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DBCBFEFF1D43A0710011B59F /* upgradeTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = upgradeTableCell.swift; sourceTree = "<group>"; };
+		DBCBFF011D43A3520011B59F /* UpgradeChangeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpgradeChangeLabel.swift; sourceTree = "<group>"; };
+		DBCBFF031D43A3720011B59F /* UpgradeCostLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpgradeCostLabel.swift; sourceTree = "<group>"; };
 		DBE826A41D428EAE005DE335 /* clickerGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clickerGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE826A71D428EAF005DE335 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBE826A91D428EAF005DE335 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +66,9 @@
 				DBE826AE1D428EAF005DE335 /* Assets.xcassets */,
 				DBE826B01D428EAF005DE335 /* LaunchScreen.storyboard */,
 				DBE826B31D428EAF005DE335 /* Info.plist */,
+				DBCBFEFF1D43A0710011B59F /* upgradeTableCell.swift */,
+				DBCBFF011D43A3520011B59F /* UpgradeChangeLabel.swift */,
+				DBCBFF031D43A3720011B59F /* UpgradeCostLabel.swift */,
 			);
 			path = clickerGame;
 			sourceTree = "<group>";
@@ -96,6 +105,7 @@
 				TargetAttributes = {
 					DBE826A31D428EAE005DE335 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = C66S4U3X9U;
 					};
 				};
 			};
@@ -135,8 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBCBFF001D43A0710011B59F /* upgradeTableCell.swift in Sources */,
+				DBCBFF021D43A3520011B59F /* UpgradeChangeLabel.swift in Sources */,
 				DBE826AA1D428EAF005DE335 /* ViewController.swift in Sources */,
 				DBE826A81D428EAF005DE335 /* AppDelegate.swift in Sources */,
+				DBCBFF041D43A3720011B59F /* UpgradeCostLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,10 +264,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = clickerGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = roper.clickerGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -262,10 +278,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = clickerGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = roper.clickerGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -288,6 +307,7 @@
 				DBE826B81D428EAF005DE335 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,16 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var balanceLabel: UILabel!
+    var balance : Int = 0;
+    @IBOutlet weak var clickerButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("updateBalanceLabel"), userInfo: nil, repeats: true)
+        
+        
+
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func nextImage() -> String{
+        let imageNames : [String] = ["cookie"]
+        let randomIndex = Int(arc4random_uniform(UInt32(imageNames.count)));
+        return imageNames[randomIndex];
     }
-
-
+    @IBAction func onTap(sender: AnyObject) {
+        clickerButton.setImage(UIImage(named: self.nextImage()),forState: UIControlState.Normal);
+        balance += 1;
+    }
+    func updateBalanceLabel(){
+        balanceLabel.text = String(balance);
+    }
 }
 
