@@ -10,7 +10,7 @@ import UIKit
 
 class UpgradeTableMenu: UITableViewController {
     let upgradeButtonValue : Int = 0;
-    let upgrades : [Upgrade] = [Upgrade(cost: 10, upgrade: 1, image: "cookie", name: "Moar Cookies"), Upgrade(cost: 100, upgrade: 3, image: "cookie", name: "EVEN MOAR ")];
+    let upgrades : [Upgrade] = [Upgrade(cost: 10, upgrade: 1, image: "sodamachine", name: "Soda Machine"), Upgrade(cost: 100, upgrade: 15, image: "foodtruck", name: "Food Truck"), Upgrade(cost: 3000, upgrade: 450, image: "mcdonalds", name: "McDonald's")];
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return upgrades.count
     }

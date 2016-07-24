@@ -22,7 +22,7 @@ class ViewController: UIViewController {
 
     }
     func nextImage() -> String{
-        let imageNames : [String] = ["cookie"]
+        let imageNames : [String] = ["cookie", "hotdog", "hamburger", "icecream", "pizza"]
         let randomIndex = Int(arc4random_uniform(UInt32(imageNames.count)));
         return imageNames[randomIndex];
     }

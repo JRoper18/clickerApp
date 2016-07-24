@@ -120,11 +120,11 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqb-5J-dHA">
-                                <rect key="frame" x="266" y="415" width="68" height="30"/>
-                                <state key="normal" title="Upgrades"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPH-lp-d8U">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <state key="normal" title="Button" image="cookie"/>
                                 <connections>
-                                    <segue destination="EbH-I2-TjU" kind="show" id="ZLU-Us-GIN"/>
+                                    <action selector="onTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iA9-8C-Bix"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Calories Per Second" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Jy-Bp-sjS">
@@ -151,11 +151,11 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPH-lp-d8U">
-                                <rect key="frame" x="200" y="200" width="200" height="200"/>
-                                <state key="normal" title="Button" image="cookie"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqb-5J-dHA">
+                                <rect key="frame" x="266" y="503" width="68" height="30"/>
+                                <state key="normal" title="Upgrades"/>
                                 <connections>
-                                    <action selector="onTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iA9-8C-Bix"/>
+                                    <segue destination="EbH-I2-TjU" kind="show" id="ZLU-Us-GIN"/>
                                 </connections>
                             </button>
                         </subviews>
