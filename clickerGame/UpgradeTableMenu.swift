@@ -10,7 +10,7 @@ import UIKit
 
 class UpgradeTableMenu: UITableViewController {
     let upgradeButtonValue : Int = 0;
-    let upgrades : [Upgrade] = [Upgrade(cost: 10, upgrade: 1, image: "cookie", name: "Moar Cookies")];
+    let upgrades : [Upgrade] = [Upgrade(cost: 10, upgrade: 1, image: "cookie", name: "Moar Cookies"), Upgrade(cost: 100, upgrade: 3, image: "cookie", name: "EVEN MOAR ")];
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return upgrades.count
     }
@@ -25,7 +25,7 @@ class UpgradeTableMenu: UITableViewController {
         tableView.allowsSelection = false;
         let cell = tableView.dequeueReusableCellWithIdentifier("UpgradeTableCell", forIndexPath: indexPath) as! UpgradeTableCell
         let upgrade = upgrades[indexPath.row];
-        cell.upgradeImageView.frame = CGRect(x: 0, y: 0, width: 75, height: 75)
+        cell.upgradeImageView.frame = CGRect(x: 0, y: 0, width: 90, height: 90)
         cell.upgradeImageView.image = UIImage(named: upgrade.image)
         cell.upgradeButton.tag = indexPath.row;
         cell.upgradeButton.addTarget(self, action: #selector(upgradeCPS(_:)),forControlEvents: UIControlEvents.TouchUpInside)

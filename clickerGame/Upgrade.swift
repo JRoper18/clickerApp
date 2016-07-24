@@ -9,11 +9,11 @@
 import Foundation
 
 class Upgrade{
-    var cost: Int;
+    var cost: Double;
     var upgrade: Int;
     var image : String;
     var name: String;
-    init(cost: Int, upgrade: Int, image: String, name: String){
+    init(cost: Double, upgrade: Int, image: String, name: String){
         self.cost = cost;
         self.upgrade = upgrade;
         self.image = image;
